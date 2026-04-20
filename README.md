@@ -5,13 +5,15 @@ This project is a small YMH220 course project. The idea is simple: use patient s
 ## Project Files
 
 - `disease_symptoms_eda_colab.ipynb` is the main notebook for this project.
-- `datasets/Training.csv` and `datasets/Testing.csv` are the dataset files.
+- `data/raw/disease_symptoms_raw.csv` is the combined raw dataset.
+- `data/Training.csv` and `data/Testing.csv` are the split files created from the raw data.
 - `diabetes_eda_colab.ipynb` is an earlier notebook from the first dataset choice.
 
 ## What the Notebook Does
 
-- Loads the symptoms dataset.
-- Cleans the extra empty column in `Training.csv`.
+- Loads the raw symptoms dataset.
+- Splits the raw data into training and test sets.
+- Saves the split files into the `data` folder.
 - Checks class balance and common symptoms.
 - Counts how many symptoms appear in each row.
 - Trains a small baseline model for a quick test.
@@ -19,7 +21,7 @@ This project is a small YMH220 course project. The idea is simple: use patient s
 ## How to Run
 
 1. Open `disease_symptoms_eda_colab.ipynb` in Google Colab.
-2. Upload `Training.csv` and `Testing.csv` to the Colab file area.
+2. Upload `disease_symptoms_raw.csv` to the Colab file area.
 3. Run the cells from top to bottom.
 
 ## Note
