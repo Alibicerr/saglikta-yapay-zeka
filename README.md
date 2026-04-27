@@ -5,14 +5,18 @@ This project is a small YMH220 course project. The idea is simple: use patient s
 ## Project Files
 
 - `disease_symptoms_eda_colab.ipynb` is the main notebook for this project.
+- `data_preparation_colab.ipynb` prepares the raw file and saves the split files.
+- `disease_distribution_colab.ipynb` checks disease balance.
+- `symptom_patterns_colab.ipynb` looks at symptom counts and common symptoms.
+- `baseline_model_colab.ipynb` runs the simple baseline model.
 - `data/raw/disease_symptoms_raw.csv` is the combined raw dataset.
 - `data/Training.csv` and `data/Testing.csv` are the split files created from the raw data.
-- `diabetes_eda_colab.ipynb` is an earlier notebook from the first dataset choice.
 
 ## What the Notebook Does
 
 - Loads the raw symptoms dataset.
 - Splits the raw data into training and test sets.
+- Uses unique symptom patterns for the split to avoid leakage between train and test.
 - Saves the split files into the `data` folder.
 - Checks class balance and common symptoms.
 - Counts how many symptoms appear in each row.
